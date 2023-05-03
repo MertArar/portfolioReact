@@ -1,6 +1,8 @@
 import Banner from "./components/banner/Banner";
 import Features from "./components/features/Features";
 import Navbar from "./components/navbar/Navbar";
+import Projects from "./components/projects/Projects";
+import ProjectsCard from "./components/projects/ProjectsCard";
 
 function App() {
   return (
@@ -9,6 +11,7 @@ function App() {
       <div className="max-w-screen-xl mx-auto">
         <Banner />
         <Features />
+        <Projects />
       </div>
     </div>
   );
