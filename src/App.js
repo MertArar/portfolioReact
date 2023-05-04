@@ -2,9 +2,8 @@ import Banner from "./components/banner/Banner";
 import Features from "./components/features/Features";
 import Navbar from "./components/navbar/Navbar";
 import Projects from "./components/projects/Projects";
-import Education from "./components/resume/Education";
 import Resume from "./components/resume/Resume";
-import Skills from "./components/resume/Skills";
+import Testimonial from "./components/testimonial/Testimonial";
 
 function App() {
   return (
@@ -15,6 +14,7 @@ function App() {
         <Features />
         <Projects />
         <Resume />
+        <Testimonial />
       </div>
     </div>
   );
