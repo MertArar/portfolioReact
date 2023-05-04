@@ -15,7 +15,6 @@ function App() {
         <Features />
         <Projects />
         <Resume />
-        <Skills />
       </div>
     </div>
   );

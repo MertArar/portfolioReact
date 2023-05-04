@@ -1,5 +1,9 @@
 import React, { useState } from "react";
 import Title from "../layouts/Title";
+import Education from "./Education";
+import Skills from "./Skills";
+import Achievement from "./Achievement";
+import Experience from "./Experience";
 
 const Resume = () => {
   const [educationData, setEducationData] = useState(true);
@@ -7,12 +11,12 @@ const Resume = () => {
   const [experienceData, setExperienceData] = useState(false);
   const [achievementData, setAchievementData] = useState(false);
   return (
-    <section>
-      <div>
+    <section id="resume" className="w-full py-20 border-b-[1px] border-b-black">
+      <div className="flex justify-center items-center text-center">
         <Title title="7+ YEARS OF EXPERIENCE" des="My Resume" />
       </div>
       <div>
-        <ul>
+        <ul className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
           <li
             onClick={() =>
               setEducationData(true) &
@@ -24,7 +28,7 @@ const Resume = () => {
               educationData
                 ? "border-designColor rounded-lg"
                 : "border-transparent"
-            }resumeLi `}
+            } resumeLi`}
           >
             Education
           </li>
@@ -37,7 +41,7 @@ const Resume = () => {
             }
             className={`${
               skillData ? "border-designColor rounded-lg" : "border-transparent"
-            }resumeLi `}
+            } resumeLi`}
           >
             Professional Skills
           </li>
@@ -52,7 +56,7 @@ const Resume = () => {
               experienceData
                 ? "border-designColor rounded-lg"
                 : "border-transparent"
-            }resumeLi `}
+            } resumeLi`}
           >
             Experience
           </li>
@@ -67,12 +71,16 @@ const Resume = () => {
               achievementData
                 ? "border-designColor rounded-lg"
                 : "border-transparent"
-            }resumeLi `}
+            } resumeLi`}
           >
-            Achievement
+            Achievements
           </li>
         </ul>
       </div>
+      {educationData && <Education />}
+      {skillData && <Skills />}
+      {achievementData && <Achievement />}
+      {experienceData && <Experience />}
     </section>
   );
 };
