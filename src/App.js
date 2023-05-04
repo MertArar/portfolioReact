@@ -4,6 +4,7 @@ import Navbar from "./components/navbar/Navbar";
 import Projects from "./components/projects/Projects";
 import Education from "./components/resume/Education";
 import Resume from "./components/resume/Resume";
+import Skills from "./components/resume/Skills";
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
         <Features />
         <Projects />
         <Resume />
-        <Education />
+        <Skills />
       </div>
     </div>
   );
