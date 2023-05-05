@@ -14,7 +14,6 @@ function App() {
         <Features />
         <Projects />
         <Resume />
-        <Testimonial />
       </div>
     </div>
   );

@@ -1,6 +1,8 @@
 import React from "react";
-import { FaFacebookF, FaTwitter, FaLinkedinIn, FaReact } from "react-icons/fa";
-import { SiTailwindcss, SiFigma, SiNextdotjs } from "react-icons/si";
+import { FaLinkedinIn, FaReact, FaUnity } from "react-icons/fa";
+import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
+import { AiFillGithub } from "react-icons/ai";
+import { BsInstagram } from "react-icons/bs";
 
 const Media = () => {
   return (
@@ -9,13 +11,19 @@ const Media = () => {
         <h2 className="text-base uppercase font-titleFont mb-4">Find me in</h2>
         <div className="flex gap-4">
           <span className="bannerIcon">
-            <FaFacebookF />
+            <a href="https://github.com/MertArar">
+              <AiFillGithub />
+            </a>
           </span>
           <span className="bannerIcon">
-            <FaTwitter />
+            <a href="https://www.linkedin.com/in/mert-arar-6788771bb/">
+              <FaLinkedinIn />
+            </a>
           </span>
           <span className="bannerIcon">
-            <FaLinkedinIn />
+            <a href="https://www.instagram.com/mertararr/">
+              <BsInstagram />
+            </a>
           </span>
         </div>
       </div>
@@ -25,16 +33,24 @@ const Media = () => {
         </h2>
         <div className="flex gap-4">
           <span className="bannerIcon">
-            <FaReact />
+            <a href="https://unity.com/">
+              <FaUnity />
+            </a>
           </span>
           <span className="bannerIcon">
-            <SiNextdotjs />
+            <a href="https://react.dev/">
+              <FaReact />
+            </a>
           </span>
           <span className="bannerIcon">
-            <SiTailwindcss />
+            <a href="https://nextjs.org/">
+              <SiNextdotjs />
+            </a>
           </span>
           <span className="bannerIcon">
-            <SiFigma />
+            <a href="https://tailwindcss.com/">
+              <SiTailwindcss />
+            </a>
           </span>
         </div>
       </div>
