@@ -1,6 +1,8 @@
 import React from "react";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import Media from "./Media";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../variant";
 
 const LeftBanner = () => {
   const [text] = useTypewriter({
@@ -11,7 +13,13 @@ const LeftBanner = () => {
     delaySpeed: 2000,
   });
   return (
-    <div className="w-full lgl:w-1/2 flex flex-col gap-20">
+    <motion.div
+      className="w-full lgl:w-1/2 flex flex-col gap-20"
+      variants={fadeIn("right", 0.4)}
+      initial="hidden"
+      whileInView={"show"}
+      viewport={{ once: false, amount: 0.7 }}
+    >
       <div className="flex flex-col gap-5">
         <h4 className="text-lg font-normal uppercase">welcome to my world</h4>
         <h1 className="text-6xl font-bold text-white">
@@ -32,7 +40,7 @@ const LeftBanner = () => {
         </p>
       </div>
       <Media />
-    </div>
+    </motion.div>
   );
 };
 
