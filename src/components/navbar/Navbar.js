@@ -13,7 +13,8 @@ const Navbar = () => {
       <div className="mx-7">
         <h4 className="text-4xl uppercase font-bold">
           <a href="index.html">
-            M<span className="text-designColor">er</span>t
+            <span className="text-white">M</span>
+            <span className="text-designColor">er</span>t
           </a>
         </h4>
       </div>

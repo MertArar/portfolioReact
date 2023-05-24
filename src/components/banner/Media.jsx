@@ -2,7 +2,7 @@ import React from "react";
 import { FaLinkedinIn, FaReact, FaUnity } from "react-icons/fa";
 import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
 import { AiFillGithub } from "react-icons/ai";
-import { BsInstagram } from "react-icons/bs";
+import { BsMedium } from "react-icons/bs";
 
 const Media = () => {
   return (
@@ -21,8 +21,8 @@ const Media = () => {
             </a>
           </span>
           <span className="bannerIcon">
-            <a href="https://www.instagram.com/mertararr/">
-              <BsInstagram />
+            <a href="https://medium.com/@mertarar.ma">
+              <BsMedium />
             </a>
           </span>
         </div>

@@ -18,8 +18,8 @@ const ContactLeft = () => {
           MERN Stack Develeoper
         </p>
         <p className="text-base text-gray-400 tracking-wide">
-          Lorem ipsum, dolor sit amet consectetur adipicing elit. Facilis ipsam
-          autem camque, accusantium dicta odio
+          I can't wait to meet you! If you want to contact me, you can use my
+          social media accounts or fill out the form and send a message.
         </p>
         <p
           className="text-base text-gray-400 flex items-center gap-2
